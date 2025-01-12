@@ -1,0 +1,26 @@
+@media only screen and (min-width: 960px) {
+	header{
+        display: flex;
+    }
+    .navigation
+    {
+        margin-right: 0;
+    }
+    .nav-list{
+        display: flex;
+    }
+    .navigation li {
+		display: block;
+
+	}
+    .navigation a {
+		text-align: right;
+        font-size: 22px;
+        flex: 1 1 100%;
+
+	}
+    #menu {
+		display: none;
+	}
+    
+}
