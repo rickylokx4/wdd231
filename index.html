@@ -18,7 +18,7 @@
     <header>
         <button id="menu"></button>
         <div class="name-title">
-        <img id="image1" src="images/pic1.jpg" alt="">
+        <img id="image1" src="images/pic1.jpg" alt="my-pic" loading="lazy">
         <h1 id="name">Ricardo Salazar</h1>
         </div>
         <nav class="navigation">
@@ -44,7 +44,7 @@
         <section class="right-side">
         <h2>Lima, Peru</h2>
         <figure>
-            <img src="images/machupicchu.webp" alt="Machu Picchu" style="width:100%">
+            <img src="images/machupicchu.webp" alt="Machu Picchu" style="width:100%" loading="">
             <figcaption>Machu Picchu</figcaption>
           </figure>
         </section>
@@ -54,9 +54,9 @@
         <section class="bottom-side">
             <h2>Web and Computer Programming Certificate</h2>
             <div class="buttons">
-                <button class="course-button" value="all" title="Filter button">All</button>
-                <button class="course-button" value="cse" title="Filter button">CSE</button>
-                <button class="course-button" value="wdd" title="Filter button">WDD</button>
+                <button class="course-button" onclick="filterCourses('all')">All</button>
+                <button class="course-button" onclick="filterCourses('CSE')">CSE</button>
+                <button class="course-button" onclick="filterCourses('WDD')">WDD</button>
             </div>
             <div id="courses"></div>
           </section>

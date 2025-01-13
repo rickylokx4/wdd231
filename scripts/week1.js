@@ -5,7 +5,6 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
-
 const courses = [
     {
         subject: 'CSE',
@@ -85,3 +84,28 @@ const courses = [
         completed: false
     }
 ]
+
+function displayCourses(courseList) {
+    const coursesContainer = document.getElementById("courses");
+    coursesContainer.innerHTML = "";
+    courseList.forEach((course) => {
+      const courseDiv = document.createElement("div");
+      let name = `${course.subject}${course.number}`
+      courseDiv.textContent = name;
+      courseDiv.className = course.completed ? "completed" : "not-completed";
+      coursesContainer.appendChild(courseDiv);
+    });
+  }
+  
+  // Filter courses based on type
+  function filterCourses(subject) {
+    let filteredCourses = courses;
+    if (subject !== "all") {
+      filteredCourses = courses.filter((course) => course.subject === subject);
+    }
+    displayCourses(filteredCourses);
+  }
+  
+  // Initial display of all courses
+  displayCourses(courses);
+  
