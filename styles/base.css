@@ -14,8 +14,6 @@ body{
     min-width: 500px;
     display: flex;
     flex-direction: column;
-    
-
 }
 header{
     grid-column: 1/4;
@@ -60,7 +58,7 @@ h2{
     transition: 0.5s;
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
-.navigation a:hover, navigation a:active {
+.navigation a:hover, .navigation a:active {
 	color: var(--third-font-color);
 	background-color: var(--selection-color)
 }
