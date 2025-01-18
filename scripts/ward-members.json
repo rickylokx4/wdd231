@@ -1,0 +1,35 @@
+{
+    "family_name": "Salazar",
+    "move_date": "12-8-2023",
+    "number_people": 5,
+    "visited_by_bishopric": true,
+    "family_members":[
+        {
+            "name": "Ricardo Salazar",
+            "Gender":"Male",
+            "Birthdate": "06-24-1987"
+        },
+        {
+            "name": "Ceclia Caceres",
+            "Gender":"Female",
+            "Birthdate": "02-28-1990"
+        }, 
+        {
+            "name": "Benjamin Salazar",
+            "Gender":"Male",
+            "Birthdate": "09-16-2007"
+        },
+        {
+            "name": "Ryan Salazar",
+            "Gender":"Female",
+            "Birthdate": "07-01-2015"
+        },
+        {
+            "name": "Anthony Salazar",
+            "Gender":"Male",
+            "Birthdate": "06-06-2019"
+        }
+
+    ]
+
+}
