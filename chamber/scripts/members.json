@@ -1,0 +1,68 @@
+{"companies":[
+    {
+        "company_name": "Flumy",
+        "address": "3125 darvany dr Dallas Tx",
+        "phone": "(234)234-8678",
+        "website": "www.flummy.org",
+        "imageurl": "https://d1yjjnpx0p53s8.cloudfront.net/image_1_0.png?SMCptPQJvuR9_fV1CHmYgijYO31qKPgzFlumm",
+        "membership": 1,
+        "info": ""
+
+    },
+    {
+        "company_name": "Oliver & Co",
+        "address": "1232 Harry Hines Av Dallas Tx",
+        "phone": "(232)642-2689",
+        "website": "www.oliver&co.org",
+        "imageurl": "https://d1yjjnpx0p53s8.cloudfront.net/oliver_co_logo_1.png?DC88H9zCfgY3iLHLzBLD4yiVCZ8P3Kks",
+        "membership": 3,
+        "info": ""
+    },
+    {
+        "company_name": "greywood digital",
+        "address": "346 South Buckner Blvd Dallas Tx",
+        "phone": "(678)326-8563",
+        "website": "greywooddigital.com",
+        "imageurl": "https://d1yjjnpx0p53s8.cloudfront.net/g-digital-512.png?FRm1UkKyCdx2qF4RZCTZMSBGp7UZJp0w",
+        "membership": 2,
+        "info": ""
+        },
+    {
+        "company_name": "hubeurope",
+        "address": "via Giuseppe Tartini 23 Torino",
+        "phone": "(232)432-8867",
+        "website": "hubeurope.org",
+        "imageurl": "https://d1yjjnpx0p53s8.cloudfront.net/whatsapp_image_2024-05-11_at_20.48.18.jpeg?RwBjOn8vgFXQF17XjLKurwSUxpUBxcwR",
+        "membership": 3,
+        "info": ""
+    },
+    {
+        "company_name": "Happy Work",
+        "address": "via Garibaldi 24 Milano",
+        "phone": "(223)324-0986",
+        "website": "www.HappyWork.com",
+        "imageurl": "https://d1yjjnpx0p53s8.cloudfront.net/gh.jpg?WnOHtYkaqK2BqRXtIyP1p6TGGHBoxCEn",
+        "membership": 1,
+        "info": ""
+
+    },
+    {
+        "company_name": "Revo",
+        "address": "via Bosco 234 Roma",
+        "phone": "(221)211-2373",
+        "website": "www.flummy.org",
+        "imageurl": "https://d1yjjnpx0p53s8.cloudfront.net/download.png?A2_MN_t4NeHsC95wU2BM42kMTgPRYICO",
+        "membership": 3,
+        "info": ""
+    },
+    {
+        "company_name": "Altius Boxing",
+        "address": "322 Irving dr Dallas Tx",
+        "phone": "(232)423-8345",
+        "website": "www.altiusboxing.org",
+        "imageurl": "https://d1yjjnpx0p53s8.cloudfront.net/8c8aeb6b-0712-4bf3-bff2-9a5ef146aa9d.png?dBfJOIrfZpeGgVLbPyo6C4W5ZXI1IRED",
+        "membership": 3,
+        "info": ""
+        }
+]
+}

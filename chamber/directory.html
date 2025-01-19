@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Ricardo Salazar">
+    <meta name="descrition" content="Bayovar Chamber of commerce">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Bayovar Chamber of commerce">
+    <meta property="og:type" content="Web Site">
+    <meta property="og:image" content="https://rickylokx4.github.io/wdd231/chamber/images/open-graph-image.png">
+    <meta property="og:url" content="https://rickylokx4.github.io/wdd231/chamber">
+    <meta property="og:description" content="Bayovar Chamber of commerce offical Web page.">
+    <meta property="fb:app_id" content="none" />
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/buttom.js" defer></script>
+
+    <title></title>
 </head>
 <body>
+    <header>
+        <section>
+            <img id="logo" src="images/open-graph-image2.png" alt="logo" loading="lazy">
+        </section>
+        <button id="menu" aria-label="menu"></button>
+        <nav class ="navigation">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="menu">
+		<button id="grid">⏹️Grid</button>
+		<button id="list">📄List</button>
+	</div>
+        <div id="cards"></div>
+    </main>
+
+    <footer>
+        <div class="footer1">
+            <p>Bayovar Chamber of commerce</p>
+            <p>1242 Wiesse Av. SJL - Lima</p>
+            <p>info@Bayovarcc.org</p>
+            <p>(955)733-896</p>
+        </div>
+        <div class="footer2">
+            ----Social Media Icons Here----
+        </div>
+        <div class="footer3">
+            <p>WDD231 Class Project</p>
+            <p>Ricardo Salazar</p>
+            <p>&copy;<span id="currentyear"></span> Bayovar Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+        
+    </footer>
     
 </body>
 </html>

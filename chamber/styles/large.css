@@ -1,0 +1,30 @@
+@media only screen and (min-width: 600px) {
+    
+    .navigation{
+        margin-right: 20px;
+        align-content: end;
+    }
+    .nav-list{
+        display: flex;
+        margin: auto;
+        min-width: 350px;
+    }
+    .navigation li{
+        display: block;
+        margin: auto;
+    }
+    #menu {
+		display: none;
+	}
+    footer{
+        align-content: center;
+        display: flex; 
+    }
+    footer div{
+        min-width: 200px;
+        max-width: 350px;
+        margin: auto;
+
+    }
+    
+}

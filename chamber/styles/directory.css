@@ -1,0 +1,26 @@
+main{
+    align-items: center;
+}
+.card{
+    width: 450px;
+    height: 210px;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 6px;
+    border-color: rgb(210, 211, 211);
+    box-shadow: 0 0 10PX 2PX rgb(80, 82, 82);
+}
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+.card p{
+    margin: 0%;
+}
+.card h2{
+    margin: 1px;
+}
