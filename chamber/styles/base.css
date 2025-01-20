@@ -101,7 +101,10 @@ header{
 
 }
 .list section h2{
-    font-size: 1rem;
+    font-size: 15px;
+}
+.list p{
+    font-size: 15px;
 }
 footer{
     font-size: 20px;
@@ -111,7 +114,6 @@ footer{
 }
 .button-container{
     text-align: center;
-    margin: 25px;
 }
 button{
     font-size: 20px;
