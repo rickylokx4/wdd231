@@ -1,0 +1,14 @@
+main{
+    font-size: 22px;
+    text-align: center;
+    border: 2px solid rgb(74, 73, 73);
+    border-radius: 8px;
+    background-color: rgb(233, 238, 206);
+
+}
+#current-temp{
+    font-size: 30px;
+}
+#weather-icon{
+    width: 80px;
+}
