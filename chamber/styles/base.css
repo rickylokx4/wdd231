@@ -172,5 +172,25 @@ footer{
 .card h2{
     margin: 1px;
 }
+/* hamburguer button end*/
+.main-image {
+    position: relative;
+    margin: 20px;
+}
+#call {
+    position: absolute;
+    bottom: 5%;;
+    right: 3%;
+    font-weight: 600;
+    background-color: #618d0e;
+    color: var(--selection-color);
+    font-size: 20px;
+    text-decoration: none;
+    border: solid;
+    border-radius: 20px;
+    border-color: #618d0e;;
+    padding: 1px 20px;
+}
+
 
 
