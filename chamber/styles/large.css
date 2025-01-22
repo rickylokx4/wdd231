@@ -1,21 +1,25 @@
-@media only screen and (min-width: 600px) {
-    
-    .navigation{
-        margin-right: 20px;
-        align-content: end;
+@media only screen and (min-width: 800px) {
+    /* hamburguer button stars*/
+    #menuButton{
+        display: none;
     }
-    .nav-list{
+    ul.menuLinks, ul.menuLinks.open{
         display: flex;
-        margin: auto;
-        min-width: 350px;
+        justify-content: flex-end;
     }
-    .navigation li{
-        display: block;
-        margin: auto;
+    ul.menuLinks a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
     }
-    #menu {
-		display: none;
-	}
+    nav {
+        padding-right: 2%;
+        grid-template-rows: 1fr;
+        margin-top: -45px;
+        background-color: transparent;
+    }
+    #logo{
+            width: 80px;
+    }
+    /* hamburguer button end*/
     footer{
         align-content: center;
         display: flex; 
@@ -26,15 +30,21 @@
         margin: auto;
 
     }
-    
-    
-}
-@media only screen and (min-width: 750px) {
-    .list section h2{
-        font-size: 1rem;
+    header{
+        padding-left: 2%;
+        display: grid;
+        grid-template-columns: 90px auto 44px;
+
     }
-    .list p{
-        font-size:1rem;
+    #name {
+        margin-top: -10px;
+    }
+    #name h1 {
+        font-size: 25px;
+    }
+    #name h2{
+        font-size: 20px;
     }
 
 }
+

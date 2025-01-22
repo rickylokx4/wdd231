@@ -17,45 +17,39 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/directory.css">
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/date.js" defer></script>
     <script src="scripts/chamber.js" defer></script>
-    <script src="scripts/buttom.js" defer></script>
-
-    <title>Bayovar Chamber of Commerce - Directory</title>
+    <title>Bayovar Chamber of Commerce - Index</title>
 </head>
 <body>
     <header>
-        <section>
-            <h1>
-                Bayovar Chamber of Commerce - Directory
-            </h1>
-            <img id="logo" src="images/logo-white.png" alt="logo" loading="lazy">
-        </section>
-        <button id="menu" aria-label="menu"></button>
-        <nav class ="navigation">
-            <ul class="nav-list">
+        <img id="logo" src="images/logo.png" alt="logo" loading="lazy">
+        <div id="name">
+        <H1>Ica</H1>
+        <h2>Chamber of Commerce</h2>
+        </div>
+        <button id="menuButton"></button>
+    </header>
+        <nav id="animateLinks">
+            <ul class="menuLinks">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li class="current-menu-item"><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join Us</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
-    </header>
-
+    
     <main>
         <div class="button-container">
-		<button id="grid">⏹️Grid</button>
-		<button id="list">📄List</button>
-	</div>
+        <button id="grid">⏹️Grid</button>
+        <button id="list">📄List</button>
+        </div>
         <div id="cards"></div>
-    </main>
-
+        </main>
     <footer>
         <div class="footer1">
-            <p>Bayovar Chamber of commerce</p>
-            <p>1242 Wiesse Av. SJL - Lima</p>
+            <p>Ica Chamber of commerce</p>
+            <p>Av. San Martin 1412 San Isidro, Ica</p>
             <p>info@Bayovarcc.org</p>
             <p>(955)733-896</p>
         </div>
@@ -65,11 +59,10 @@
         <div class="footer3">
             <p>WDD231 Class Project</p>
             <p>Ricardo Salazar</p>
-            <p>&copy;<span id="currentyear"></span> Bayovar Chamber of Commerce</p>
+            <p>&copy;<span id="currentyear"></span> Ica Chamber of Commerce</p>
             <p id="lastModified"></p>
         </div>
         
     </footer>
-    
 </body>
 </html>

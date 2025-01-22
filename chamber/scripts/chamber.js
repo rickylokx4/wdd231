@@ -1,11 +1,44 @@
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+// Nav Button Config stars
+const hamButton = document.querySelector('#menuButton');
+const navigation = document.querySelector('#animateLinks');
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+// Nav Button Config ends
 
+// Nav Time Config Starts
+const today = new Date();
+const year = today.getFullYear();
+const yearText = document.getElementById('currentyear');
+yearText.innerHTML = year;
+
+let LastModif = new Date(document.lastModified);
+const lastModified = document.getElementById('lastModified')
+lastModified.innerHTML="Last Modafied: "+ LastModif
+// // Nav Button Config ends
+
+//adding members to the directory
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("#cards");
+
+gridbutton.addEventListener("click", () => {
+
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); 
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
+
+//getting js
 const url ='scripts/members.json';
 const cards = document.querySelector('#cards')
 
@@ -14,6 +47,8 @@ async function getMembers() {
 	const data = await response.json();
 	displayCompanies(data.companies)	
 }
+
+/* making cards*/
 const displayCompanies = (companies) => {
 	companies.forEach((company) =>{
 
@@ -44,13 +79,6 @@ const displayCompanies = (companies) => {
 		card.appendChild(webPage)
 
 		cards.appendChild(card)
-
-
-
-
-
-
 	})
 };
-
 getMembers()

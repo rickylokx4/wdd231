@@ -1,81 +1,115 @@
 :root{
-    --primary-color:#003e8f;
-    --Secondary-color:#ffff;
-    --background-color:#ffff;
-    --primary-font-color:#ffffff;
-    --secondary-font-color:#262626;
-
+    --background-color:#0b3c5d;
+    --first-font-color: #ffffff;
+    --secundary-font-color:#d9b310;
+    --third-font-color: #ffff;
+    --selection-color: #1d2731;
 }
-
-main{
-    margin: 10px;
-    min-height: 60vh;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body{
-    margin: 0 auto;
+    min-width: 320px;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    min-height: 100vh;
-    min-width: 359px;
-    max-width: 1300px;
-    border: solid;
-    border-color: var(--primary-color);
-    
-}
-header{
-    display: flex;
-    background-color: var(--primary-color);
-    color: var(--primary-font-color);
-}
-.navigation{
-    list-style: none;
     margin: 0 auto;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
 }
-.navigation li{
-    display: none;
+main{
+    margin: 0 auto;
+    max-width: 1200px;
 }
-.navigation a{
+
+header{
+    padding: 10px 10px;
+    color: var(--first-font-color);
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    align-items: end;
+    background-color: var(--background-color);
+    border-bottom: solid;
+    border-color: var(--selection-color);
+    border-width: 2px;
+    background-color: var(--background-color);
+}
+
+/* hamburguer button star*/
+nav{
+    background-color: var(--background-color)
+}
+#menuButton::before{
+    content: "\2630";
+}
+#menuButton{
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--first-font-color);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+/* li{
+    list-style: none;
+} */
+ul.menuLinks li a{
     display: block;
-    padding: 0.75rem;
-    text-align: left;
+    padding: .75rem 2vw;
+    color: var(--first-font-color);
     text-decoration: none;
-    color: var(--third-font-color);
-    font-weight: 760;
-    transition: 0.5s;
-    font-size: clamp(1rem, 2vmin, 1.5rem);
-    
 }
-.navigation a:hover, .navigation a:active {
-	color: var(--third-font-color);
-	background-color: var(--selection-color)
+ul.menuLinks li.current-menu-item a{
+    background-color: rgba(0, 0, 0, 0.2);
 }
-.open li {
-	display: block;
+ul.menuLinks {
+    list-style-type: none;
 }
-.navigation a:hover {
-	font-weight: 800;
-	text-decoration: underline;
-	text-decoration-color: var(--third-font-color);
+#menuButton.open::before {
+    content: "\2716";
+}
+ul.menuLinks a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+nav ul {
+    overflow: hidden;
+}
+nav.open{
+    grid-template-rows: 1fr;
+}
+/* hamburguer button end*/
+
+footer{
+    border-top: solid;
+    border-color: var(--selection-color);
+    border-width: 2px;
+    background-color: var(--background-color);
+    font-size: 16px;
+    text-align: center;
+    color: var(--first-font-color);
+    padding: 10px;
+}
+.fotter1, .footer2, .fotter3{
+    margin: 20px;
 }
 #logo{
-    width: 250px;
+    width: 40px;
 }
-#menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: var(--third-font-color);
-    position: absolute;
-	top: 8px;
-	right: 20px;
+#name h1, h2{
+    font-size: 15px;
 }
-#menu::before {
-	content: "☰";
-}
-#menu.open::before {
-	content: "X";
-}
-/* erase image */
+
+/* hamburguer button end*/
+
 .list section img {
 	display: none; 
 }
@@ -88,7 +122,7 @@ header{
 	background-color: rgb(169, 211, 236);
 }
 .list section {
-    width: 99%;
+    width: 100%;
     height: auto;
 	display: grid;
 	grid-template-columns: 1fr 1.5fr 1fr 1fr;
@@ -101,27 +135,43 @@ header{
 
 }
 .list section h2{
+    text-decoration: normal;
     font-size: 15px;
 }
 .list p{
     font-size: 15px;
 }
-footer{
-    font-size: 20px;
-    text-align: center;
-    background-color: var(--primary-color);
-    color: var(--primary-font-color);
-}
+
 .button-container{
     text-align: center;
 }
-button{
+#grid, #list{
     font-size: 20px;
     margin: 20px;
     padding: 2px 20px;
     text-align: center;
 
 }
-h1{
-    display: none;
+.card{
+    width: 450px;
+    height: 210px;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 6px;
+    border-color: rgb(210, 211, 211);
+    box-shadow: 0 0 10PX 2PX rgb(80, 82, 82);
 }
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; 
+}
+.card p{
+    margin: 0%;
+}
+.card h2{
+    margin: 1px;
+}
+
+
