@@ -136,7 +136,7 @@ footer{
 }
 .list section a{
     text-decoration: none;
-    color: #1d2731;
+    color: var(--selection-color);
 }
 .list p{
     font-size: 15px;
@@ -154,18 +154,23 @@ footer{
 }
 .card{
     width: 450px;
-    height: 210px;
+    height: 220px;
     margin: 30px;
     padding: 20px;
     border-radius: 6px;
     border-color: rgb(210, 211, 211);
     box-shadow: 0 0 10PX 2PX rgb(80, 82, 82);
 }
+.card a{
+    text-decoration: none;
+    color: var(--selection-color);
+}
 #cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
+    
 }
 .card p{
     margin: 0%;
@@ -202,9 +207,6 @@ footer{
 }
 #events{
     background-color: var(--background-color);
-}
-#weather {
-    
 }
 #events, #weather ,#forecast{
     border: solid;
