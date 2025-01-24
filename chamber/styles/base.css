@@ -104,7 +104,7 @@ footer{
 #logo{
     width: 40px;
 }
-#name h1, h2{
+#name h1 {
     font-size: 15px;
 }
 
@@ -127,15 +127,16 @@ footer{
 	display: grid;
 	grid-template-columns: 1fr 1.5fr 1fr 1fr;
 	margin: 0;
-    
 	padding: 0.25rem;
     border-radius: 0;
     box-shadow: none;
-
-
 }
 .list section h2{
     font-size: 15px;
+}
+.list section a{
+    text-decoration: none;
+    color: #1d2731;
 }
 .list p{
     font-size: 15px;
@@ -190,6 +191,50 @@ footer{
     border-radius: 20px;
     border-color: #618d0e;;
     padding: 1px 20px;
+}
+.home {
+    margin: 8px;
+}
+#container1 {
+    display: flex;
+    flex-wrap: wrap;
+    color: #1d2731;
+}
+#events{
+    background-color: var(--background-color);
+}
+#weather {
+    
+}
+#events, #weather ,#forecast{
+    border: solid;
+    border-color: #1073ad;
+    border-width: 2px;
+    margin: 8px auto; 
+}
+
+#container1 h3{
+    text-decoration-style: none;
+    text-align: center;
+    color: var(--first-font-color);
+    border-bottom: solid;
+    border-color: var(--background-color);
+    border-width: 2px;
+    font-size: 25px;
+    background-color: var(--background-color);
+    font-weight: 100%;
+}
+#weather-icon{
+    width: 90px;
+    margin: 10px;
+    margin-left: 50px;
+}
+#weather p, #forecast p{
+    font-size: 20px;
+    padding: 2px 20px;
+}
+#forecast p {
+    margin-top: 50px;
 }
 
 

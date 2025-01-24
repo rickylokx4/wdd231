@@ -18,15 +18,15 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/main.js" type="module" defer></script>
+    
     <title>Bayovar Chamber of Commerce - Index</title>
 </head>
 <body>
     <header>
         <img id="logo" src="images/logo.png" alt="logo" loading="lazy">
         <div id="name">
-        <H1>Ica</H1>
-        <h2>Chamber of Commerce</h2>
+            <h1>Ica<br>Chamber of Commerce </h1>
         </div>
         <button id="menuButton"></button>
     </header>
@@ -46,14 +46,38 @@
                 <source srcset="images/main-image-small.webp" media="(max-width: 570px)">
                 <img src="images/main-image.webp" alt="main image" width="100%" loading="lazy">
             </picture>
-            
         </div>
-        <div>
+        <section class="home">
+            <div id="container1">
+                <div id="events">
+                    <h3>Lasts Event: UTP university training</h3>
+                    <img id="last-event" src="images/training-low.webp" alt="training" width="100%" loading="lazy">
+                </div>
+                <div id="weather">
+                    <h3>The Weather</h3>
+                    <img id="weather-icon" src="" alt="">
+                    <p id="city"></p>
+                    <p id="current-temp"></p>
+                    <p id="weather-desc"></p>
+                    <p>high: <span id="high-temp"></span></p>
+                    <p>Low: <span id="low-temp"></span></p>
+                    <p>Humity: <span id="humidity"pan></span></p>
+                    <p><span id="sunrise"></span></p>
+                    <p><span id="sunset"></span></p>
+                </div>
+                <div id="forecast">
+                    <h3>Forecast</h3>
+                    <p>Today: <span id="today-forecast"></span></p>
+                    <p><span id="tomorrow-forecast"></span></p>
+                    <p><span id="after-tomorrow-forecast"></span></p>
+                </div>
+            </div>
 
-        </div>
-        <div>
-
-        </div>
+            <div id="container2">
+                
+            </div>
+        </section>
+        
     </main>
     <footer>
         <div class="footer1">

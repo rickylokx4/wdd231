@@ -1,3 +1,8 @@
+import { getCurrentYear, getLastModified } from "./functions.mjs";
+
+getCurrentYear();
+getLastModified();
+
 // Nav Button Config stars
 const hamButton = document.querySelector('#menuButton');
 const navigation = document.querySelector('#animateLinks');
@@ -6,19 +11,6 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
-// Nav Button Config ends
-
-// Nav Time Config Starts
-const today = new Date();
-const year = today.getFullYear();
-const yearText = document.getElementById('currentyear');
-yearText.innerHTML = year;
-
-let LastModif = new Date(document.lastModified);
-const lastModified = document.getElementById('lastModified')
-lastModified.innerHTML="Last Modafied: "+ LastModif
-// // Nav Button Config ends
-
 //adding members to the directory
 
 const gridbutton = document.querySelector("#grid");
@@ -71,14 +63,12 @@ const displayCompanies = (companies) => {
 		companyAdress.textContent = company.address
 		phoneNumber.textContent = company.phone
 		webPage.innerHTML = company.website
-
 		card.appendChild(logo)
 		card.appendChild(companyName)
 		card.appendChild(companyAdress)
 		card.appendChild(phoneNumber)
 		card.appendChild(webPage)
-
 		cards.appendChild(card)
 	})
 };
-getMembers()
+getMembers();
