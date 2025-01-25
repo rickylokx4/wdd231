@@ -48,19 +48,20 @@ async function apiFetch(url) {
     lowTemp.textContent = `${data.main.temp_min}`;
     humidity.textContent = `${data.main.humidity}%`;
   }
-apiFetch(weatherurl)
+apiFetch(weatherurl);
 
 // weather forecast config stars
 const forecast = `//api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${appid}&units=imperial`;
 const todayForecast = document.querySelector('#today-forecast');
-const tomorrowForecast = document.querySelector('#tomorrow-forecast')
-const afterTomorrowForecast = document.querySelector('#after-tomorrow-forecast')
+const tomorrowForecast = document.querySelector('#tomorrow-forecast');
+const afterTomorrowForecast = document.querySelector('#after-tomorrow-forecast');
 async function forestFetch(url) {
     try {
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
         displayForecast(data);
+        console.log
       } else {
           throw Error(await response.text());
       }
@@ -72,8 +73,8 @@ async function forestFetch(url) {
     todayForecast.innerHTML = `${data.list[0].main.temp}&deg;F`;
     tomorrowForecast.innerHTML = `${getTomorrow()}: ${data.list[8].main.temp}&deg;F`;
     afterTomorrowForecast.innerHTML = `${getAfterTomorrow()}: ${data.list[16].main.temp}&deg;F`;
-  }
-forestFetch(forecast)
+  };
+forestFetch(forecast);
 
 
 //////////////////////////////////////////////////
@@ -83,9 +84,9 @@ const cards = document.querySelector('#cards')
 async function getMembers() {
 	const response = await fetch(url);
 	const data = await response.json();
-	displayCompanies(filterCompanies(data.companies));
-  console.log(filterCompanies(data.companies));
-}
+  const cards = filterCompanies(data.companies)
+	displayCompanies(cards);
+};
 
 
 const filterCompanies = (companies) => {
@@ -102,8 +103,6 @@ const filterCompanies = (companies) => {
     if(selectedCompanies.includes(companySelected) !== true){
       selectedCompanies.push(companySelected);
     }
-    // const companySelected = filterCompanies[Math.floor(Math.random()*filterCompanies.length)];
-    // selectedCompanies.push(companySelected);
   }
   return selectedCompanies;
 };
