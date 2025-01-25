@@ -211,6 +211,9 @@ footer{
 #events{
     background-color: var(--background-color);
 }
+#last-event-image{
+    width: 100%;
+}
 #events, #weather ,#forecast{
     border: solid;
     border-color: #1073ad;
