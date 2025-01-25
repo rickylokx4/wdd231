@@ -183,6 +183,9 @@ footer{
     position: relative;
     margin: 20px;
 }
+#pic{
+    width: 100%;
+}
 #call {
     position: absolute;
     bottom: 5%;;
