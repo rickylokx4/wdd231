@@ -31,7 +31,6 @@ async function apiFetch(url) {
       if (response.ok) {
         const data = await response.json();
         displayResults(data);
-        console.log(data)
       } else {
           throw Error(await response.text());
       }
@@ -75,3 +74,69 @@ async function forestFetch(url) {
     afterTomorrowForecast.innerHTML = `${getAfterTomorrow()}: ${data.list[16].main.temp}&deg;F`;
   }
 forestFetch(forecast)
+
+
+//////////////////////////////////////////////////
+const url ='scripts/members.json';
+const cards = document.querySelector('#cards')
+
+async function getMembers() {
+	const response = await fetch(url);
+	const data = await response.json();
+	displayCompanies(filterCompanies(data.companies));
+  console.log(filterCompanies(data.companies));
+}
+
+
+const filterCompanies = (companies) => {
+  let filterCompanies = []
+  let selectedCompanies = []
+	companies.forEach((company) =>{
+    if(company.membership !== 1){
+      filterCompanies.push(company)
+    };
+  
+	})
+   while(selectedCompanies.length !== 3){
+    const companySelected = filterCompanies[Math.floor(Math.random()*filterCompanies.length)];
+    if(selectedCompanies.includes(companySelected) !== true){
+      selectedCompanies.push(companySelected);
+    }
+    // const companySelected = filterCompanies[Math.floor(Math.random()*filterCompanies.length)];
+    // selectedCompanies.push(companySelected);
+  }
+  return selectedCompanies;
+};
+
+/* making cards*/
+const displayCompanies = (filterCompanies) => {
+  filterCompanies.forEach((company) =>{
+		let card = document.createElement('section')
+		let logo = document.createElement('img');
+		let companyName = document.createElement('h2');
+		let companyAdress = document.createElement('p');
+		let phoneNumber = document.createElement('p');
+		let webPage = document.createElement('a');
+
+		logo.setAttribute('src', company.imageurl)
+		logo.setAttribute('alt', `${company.company_name} logo`)
+		logo.setAttribute('loading', 'lazy');
+		logo.setAttribute('width', '200');
+    logo.setAttribute('height', '100');
+		webPage.setAttribute('href', '#');
+		card.setAttribute('class', 'card');
+
+		companyName.textContent = company.company_name
+		companyAdress.textContent = company.address
+		phoneNumber.textContent = company.phone
+		webPage.innerHTML = company.website
+		card.appendChild(logo)
+		card.appendChild(companyName)
+		card.appendChild(companyAdress)
+		card.appendChild(phoneNumber)
+		card.appendChild(webPage)
+		cards.appendChild(card)
+  })
+    
+};
+getMembers();

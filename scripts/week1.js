@@ -97,7 +97,7 @@ function displayCourses(courses) {
     });
     
     const totalCredits = courses.reduce((total, credit) => {
-        return total +credit.credits
+        return total + credit.credits
     },0)
 
     const creditsDiv = document.getElementById("credits");
