@@ -31,7 +31,7 @@ header{
     margin: 10px;
 }
 
-h2{
+.title-box{
     margin:0;
     background-color: var(--background-color);
     color: var(--third-font-color);
@@ -106,6 +106,7 @@ main{
     border: solid;
     border-color: #686B6F;
     border-radius: 15px;
+    
 }
 .buttons{
     display: flex;
@@ -114,25 +115,63 @@ main{
     padding: 8px;
     border-radius: 4px;
 }
-.completed {
+.completed button{
+    width: 99%;
     background-color: var(--selection-color);
     border-color: black;
     color: var(--third-font-color);
     padding: 10px;
     margin: 5px;
     border-radius: 4px;
+    cursor: pointer;
+
   }
+  #courses div dialog div{
+   display: grid;
+   grid-template-columns: auto 44px;
+  }
+  dialog{
+    width: 900px;
+  }
+  #courses div dialog div button {
+    all:unset;
+    color: red;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 32px;
+  }
+  #courses div dialog div h2 {
+
+    text-align: center;
+    border-radius: 4px;
+    color: black;
+  }
+  #courses div dialog h3 {
+    padding-left: 13px;
+  }
+  #courses div dialog p {
+    padding: 10px;
+}
+
   
-  .not-completed {
+  .not-completed button{
+    width: 99%;
     background-color: #f6f2f2;
     padding: 10px;
     margin: 5px;
     border-radius: 4px;
+    cursor: pointer;
+
   }
 .course-button{
     padding: 10px;
     margin: 10px;
     flex: auto;
+    cursor: pointer;
+
 
 }
 figure img{

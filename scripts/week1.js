@@ -88,13 +88,46 @@ const courses = [
 function displayCourses(courses) {
     const coursesContainer = document.getElementById("courses");
     coursesContainer.innerHTML = "";
+
     courses.forEach((course) => {
-    const courseDiv = document.createElement("div");
-    let name = `${course.subject}${course.number}`
-    courseDiv.textContent = name;
-    courseDiv.className = course.completed ? "completed" : "not-completed";
-    coursesContainer.appendChild(courseDiv);
+        const courseDiv = document.createElement("div");
+        const divButton = document.createElement('button')
+        const dialog = document.createElement('dialog');
+        const dialogDiv = document.createElement('div')
+        const courseCode = document.createElement('h2')
+        const dialogButton = document.createElement('button')
+        const title = document.createElement('h3')
+        const parrafo = document.createElement('p')
+        
+        
+        divButton.textContent = `${course.subject}${course.number}`;
+        courseDiv.className = course.completed ? "completed" : "not-completed";
+        courseDiv.appendChild(divButton)
+        courseDiv.appendChild(dialog);
+        dialog.appendChild(dialogDiv)
+        dialogDiv.appendChild(courseCode)
+        dialogDiv.appendChild(dialogButton)
+        dialog.appendChild(title)
+        dialog.appendChild(parrafo);
+        divButton.addEventListener('click', ()=> {showStaff(course)});
+        coursesContainer.appendChild(courseDiv);
+
+    
+        dialogButton.addEventListener('click', ()=>{ dialog.close()});
+
+    
+
+
+    function showStaff(data){   
+        courseCode.innerHTML = `${data.subject}${data.number}`
+        dialogButton.innerHTML = "&#10006;"
+        title.innerHTML = data.title
+        parrafo.innerHTML = ` ${data.credits} credits <br> Certificate: ${data.certificate} <br><br> ${data.description} <br><br> Tecnology: ${data.technology} `
+        dialog.showModal()
+}
     });
+
+    
     
     const totalCredits = courses.reduce((total, credit) => {
         return total + credit.credits
@@ -116,4 +149,6 @@ function displayCourses(courses) {
   
   // Initial display of courses
   displayCourses(courses);
+
+
   
