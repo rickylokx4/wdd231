@@ -116,6 +116,7 @@ const displayCompanies = (filterCompanies) => {
 		let companyAdress = document.createElement('p');
 		let phoneNumber = document.createElement('p');
 		let webPage = document.createElement('a');
+    let membership = document.createElement('p')
 
 		logo.setAttribute('src', company.imageurl)
 		logo.setAttribute('alt', `${company.company_name} logo`)
@@ -124,18 +125,36 @@ const displayCompanies = (filterCompanies) => {
     logo.setAttribute('height', '100');
 		webPage.setAttribute('href', '#');
 		card.setAttribute('class', 'card');
-
+    
 		companyName.textContent = company.company_name
 		companyAdress.textContent = company.address
 		phoneNumber.textContent = company.phone
 		webPage.innerHTML = company.website
+    const filterMembership = getMembership(company)
+    membership.textContent = `Membership : ${filterMembership}`
+    
 		card.appendChild(logo)
 		card.appendChild(companyName)
 		card.appendChild(companyAdress)
 		card.appendChild(phoneNumber)
 		card.appendChild(webPage)
+    card.appendChild(membership)
 		cards.appendChild(card)
+    
   })
+
+  function getMembership(data){
+    if(data.membership == 1) {
+      return "Bronze"
+    }
+    else if(data.membership == 2){
+      return "Silver"
+    }
+    else if(data.membership == 3){
+      return  "Gold"
+    }
+    
+  }
     
 };
 getMembers();
