@@ -156,6 +156,9 @@ main{
     padding: 10px;
 }
 
+::backdrop{
+    background-color: #f5f56b;
+}
   
   .not-completed button{
     width: 99%;
@@ -171,8 +174,28 @@ main{
     margin: 10px;
     flex: auto;
     cursor: pointer;
+    
+    
+}
+.course-button:hover{
+    animation-duration: 2s;
+    animation-name: animated-button;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
 
+@keyframes animated-button {
+    0%{
 
+    }
+    50%{
+
+    }
+    100%{
+        width: 200px;
+        border-width: 5px;
+    }   
 }
 figure img{
     max-width: 300px;

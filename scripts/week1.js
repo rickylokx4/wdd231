@@ -109,22 +109,18 @@ function displayCourses(courses) {
         dialogDiv.appendChild(dialogButton)
         dialog.appendChild(title)
         dialog.appendChild(parrafo);
-        divButton.addEventListener('click', ()=> {showStaff(course)});
         coursesContainer.appendChild(courseDiv);
-
-    
+        
         dialogButton.addEventListener('click', ()=>{ dialog.close()});
+        divButton.addEventListener('click', ()=> {showStaff(course)});
 
-    
-
-
-    function showStaff(data){   
+        function showStaff(data){   
         courseCode.innerHTML = `${data.subject}${data.number}`
         dialogButton.innerHTML = "&#10006;"
         title.innerHTML = data.title
         parrafo.innerHTML = ` ${data.credits} credits <br> Certificate: ${data.certificate} <br><br> ${data.description} <br><br> Tecnology: ${data.technology} `
         dialog.showModal()
-}
+        }
     });
 
     
