@@ -53,9 +53,7 @@ nav{
     text-align: right;
     padding: .25rem 2vw;
 }
-/* li{
-    list-style: none;
-} */
+/* */
 ul.menuLinks li a{
     display: block;
     padding: .75rem 2vw;
@@ -251,6 +249,26 @@ footer{
 #forecast p {
     margin-top: 50px;
 }
+
+
+/* thanks styling*/
+#information {
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+}
+#information p {
+    margin-bottom: 20px;
+    color: #1c699c;
+}
+
+.form-data {
+    color: #0b3c5d;
+}
+#form-h2{
+    color: #0b3c5d;
+    margin-bottom: 20px;
+}
+
 
 
 

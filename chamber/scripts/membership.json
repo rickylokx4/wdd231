@@ -1,0 +1,41 @@
+{"memberships": [
+    {   
+        "name": "No Profit",
+        "cost": "free",
+        "currency": "",
+        "trainings": "no discount",
+        "advertising": "no advertising",
+        "event_notifications": "no notifications",
+        "directory": "last in order"
+      },
+      {
+        "name": "Bronze",
+        "cost": 50,
+        "currency": "soles",
+        "trainings": "20% discount",
+        "advertising": "No advertising",
+        "event_notifications": "No notifications",
+        "directory": "After Silver membership"
+      },
+      
+      {
+        "name": "Silver",
+        "cost": 80,
+        "currency": "soles",
+        "trainings": "30% discount",
+        "advertising": "Advertising on the main page",
+        "event_notifications": "Recurring notifications",
+        "directory": "After Gold membership"
+      },
+      {
+        "name": "Gold",
+        "cost": 100,
+        "currency": "soles",
+        "trainings": "50% discount",
+        "advertising": "advertising on the main page",
+        "event_notifications": "notification for all events",
+        "directory": "firts on directory"
+      }
+    ]
+    
+}

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/join.css">
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/join.js" type="module"></script>
     <title>Ica Chamber of Commerce - join</title>
 </head>
 <body>
@@ -40,27 +40,38 @@
         </nav>
     
     <main>
-        <h2>Membership Application</h2>
+        <div  id="join-container">
+            <div>
+                <h2>Membership Application</h2>
+                <form method="get" action="thanks.html" class="form1">
+                    <fieldset>
+                        <legend>Subscription Information</legend>
+                        <label>First Name*<input type="text" name="fname" title="Provide your first name" autocomplete="given-name" required></label>
+                        <label>Last Name*<input type="text" name="lname" title="Provide your last name" autocomplete="family-name" required></label>
+                        <label>Organizational Title*<input type="text" name="organization-title" title="Provide your organizational title" autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$"></label>
+                        <label>Email*<input type="email" name="email" autocomplete="email" title="Provide your e-mail" placeholder="someone@gmail.com" required></label>
+                        <label>Phone<input type="tel" name="phone" title="Provide your phone number" placeholder="123456789" autocomplete="tel" required></label>
+                        <label>business/organization's name*<input type="text" name="organization" title="Provide the business's name" autocomplete="organization" required></label>
+                        <div> Membership</div>
+                        <label><input type="radio" name="membership" value="Np" required>Np Membership</label>
+                        <label><input type="radio" name="membership" value="Bronze" required>Bronze Membership</label>
+                        <label><input type="radio" name="membership" value="Silver" required>Silver Membership</label>
+                        <label><input type="radio" name="membership" value="Gold" required>Gold Membership</label>
+                        <label>Describe you business*<textarea name="description" title="Provide a description of your business"></textarea></label>
+                        <input type="hidden" id="timestamp" name="timestamp">
+                    </fieldset>
+                    <input type="submit" value="join to the chamber">
+                </form>
+            </div>
+            <div id="membership-container">
+                <h2>Membership Application</h2>
+                    <div id="membership-cards">
 
-        <form method="get" action="thanks.html" class="form1">
-            <fieldset>
-                <legend>Subscription Information</legend>
-                <label>First Name*<input type="text" name="fname" title="Provide your first name" autocomplete="given-name" required></label>
-                <label>Last Name*<input type="text" name="lname" title="Provide your last name" autocomplete="family-name" required></label>
-                <label>Organizational Title*<input type="text" name="Organizational-title" title="Provide your organizational title" autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$"></label>
-                <label>Email*<input type="email" name="email" autocomplete="email" title="Provide your e-mail" placeholder="someone@gmail.com" required></label>
-                <label>Phone<input type="tel" name="phone" title="Provide your phone number" placeholder="123456789" autocomplete="tel" required></label>
-                <label>business/organization's name*<input type="text" name="Orgranizanizational-title" title="Provide the business's name" autocomplete="organization" required></label>
-                <div> Membership</div>
-                <label><input type="radio" name="membership" value="Np-membership">Np Membership</label>
-                <label><input type="radio" name="membership" value="bronze-membership">Bronze Membership</label>
-                <label><input type="radio" name="membership" value="silver-membership">Silver Membership</label>
-                <label><input type="radio" name="membership" value="gold-membership">Gold Membership</label>
-                <label>Describe you business*<textarea name="business-description" title="Provide a description of your business"></textarea></label>
-                <input type="hidden" id="timestamp" name="timestamp">
-            </fieldset>
-            <input type="submit" value="join to the chamber">
-        </form>
+                    </div>
+
+
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer1">
