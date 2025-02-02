@@ -219,7 +219,6 @@ footer{
 }
 #events, #weather ,#forecast{
     flex-grow: 1;
-    flex-basis: 200;
     border: solid;
     border-color: #1073ad;
     border-width: 2px;
