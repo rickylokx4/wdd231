@@ -48,7 +48,7 @@
                         <legend>Subscription Information</legend>
                         <label>First Name*<input type="text" name="fname" title="Provide your first name" autocomplete="given-name" required></label>
                         <label>Last Name*<input type="text" name="lname" title="Provide your last name" autocomplete="family-name" required></label>
-                        <label>Organizational Title*<input type="text" name="organization-title" title="Provide your organizational title" autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$"></label>
+                        <label>Organizational Title*<input type="text" name="organization-title" title="Provide your organizational title (Must be at least 7 characters and only letters, hyphens or spaces) " autocomplete="organization-title" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\- ]{7,}"></label>
                         <label>Email*<input type="email" name="email" autocomplete="email" title="Provide your e-mail" placeholder="someone@somemail.com" required></label>
                         <label>Phone<input type="tel" name="phone" title="Provide your phone number" placeholder="123456789" autocomplete="tel" required></label>
                         <label>business/organization's name*<input type="text" name="organization" title="Provide the business's name" autocomplete="organization" required></label>
