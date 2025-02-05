@@ -32,12 +32,16 @@ function makeCards(places){
         image.setAttribute("src", place.photo_url);
         description.innerHTML = place.description;
         address.innerHTML = place.adress;
+        button.innerHTML = "Learn more"
         
         card.appendChild(title)
         card.appendChild(image)
         card.appendChild(description)
         card.appendChild(address)
+        card.appendChild(button)
         cards.appendChild(card)
+
+        
     });
 
 
