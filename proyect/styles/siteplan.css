@@ -1,0 +1,27 @@
+body{
+    font-family: "Bitter", serif;
+    font-style: normal;
+    background-color: #cdd2d5;
+}
+header{
+    
+    background-color: #2a2727;
+}
+h1{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: #FACA1E;
+    background-color: #2a2727;
+}
+
+h2{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: #FACA1E;
+    background-color: #2a2727;
+}
+
+
+
