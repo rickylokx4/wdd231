@@ -22,22 +22,25 @@ function makeCards(places){
     places.forEach(place => {
 
         const card = document.createElement('div')
-        const title = document.createElement('h2')
+        const title = document.createElement('h3')
         const image = document.createElement('img')
         const description = document.createElement('p')
-        const address = document.createElement('p')
+        const address = document.createElement('address')
         const button = document.createElement('button')
 
+        card.setAttribute("class", "discover-card")
         title.innerHTML = place.name;
         image.setAttribute("src", place.photo_url);
-        description.innerHTML = place.description;
-        address.innerHTML = place.adress;
+        image.setAttribute("alt", `photography of ${place.name}`);
+        image.setAttribute("loading", "lazy");
+        description.innerHTML = `Description: ${place.description} `;
+        address.innerHTML = `Address: ${place.address} `;
         button.innerHTML = "Learn more"
         
-        card.appendChild(title)
         card.appendChild(image)
-        card.appendChild(description)
+        card.appendChild(title)
         card.appendChild(address)
+        card.appendChild(description)
         card.appendChild(button)
         cards.appendChild(card)
 
