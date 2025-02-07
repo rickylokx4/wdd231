@@ -29,6 +29,7 @@ function makeCards(places){
         image.setAttribute("src", place.photo_url);
         image.setAttribute("alt", `photography of ${place.name}`);
         image.setAttribute("loading", "lazy");
+        image.setAttribute("class", "card-image")
         description.innerHTML = `Description: ${place.description} `;
         address.innerHTML = `Address: ${place.address} `;
         button.innerHTML = "Learn more"
