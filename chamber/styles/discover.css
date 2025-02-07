@@ -36,6 +36,12 @@
     width: 150px;
     height: 30px;
     margin: 1rem;
-    grid-area: button;
-    
+    grid-area: button; 
+}
+#lastVisit {
+    text-align: center;
+    font-size: 20px;
+    color: #0b3c5d;
+    margin: 1rem;
+    font-weight: 600;
 }
