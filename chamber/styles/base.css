@@ -109,6 +109,7 @@ footer{
 #name h2 {
     font-size: 25px;
     color: var(--first-font-color);
+    margin: 20px;
 }
 h1{
     display: none;
