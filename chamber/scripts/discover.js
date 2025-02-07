@@ -54,7 +54,10 @@ if(lastVisit == 0){
 else if(daysNotVisit < 1){
     lastVisitDiv.innerHTML = `Back so soon! Awesome!`
 }
-else if (daysNotVisit > 1){
+else if (daysNotVisit > 1 & daysNotVisit < 2){
+    lastVisitDiv.innerHTML = `You last visited 1 day ago.`
+}
+else{
     lastVisitDiv.innerHTML = `You last visited ${daysNotVisit.toFixed(0)} days ago.`
 }
 localStorage.setItem("lastVisit-ls", currentVisit)
