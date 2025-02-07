@@ -33,10 +33,15 @@
     grid-area: address;
 }
 .discover-card button{
-    width: 150px;
-    height: 30px;
-    margin: 1rem;
+    width: 90%;
+    height: 45px;
+    margin: 1rem 5%;
     grid-area: button; 
+    border: none;
+    border-radius: 20px;
+    background-color: #0b3c5d;
+    color: #fff;
+    font-size: large;
 }
 #lastVisit {
     text-align: center;
