@@ -39,8 +39,9 @@
     #name {
         margin-top: -10px;
     }
-    #name h1 {
+    #name h2 {
         font-size: 25px;
+        margin: 20px;
     }
     #call {
         font-size: 30px;

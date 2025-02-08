@@ -1,0 +1,26 @@
+@media only screen and (min-width: 38rem){
+    /*taken nav button out in large screens*/
+    #navButton {
+        display: none;
+    }
+    /*show full list in large screens and moving to right*/
+    #menuLinks, #menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #menuLinks a:hover{
+        background-color: rgba(255,255,255,0.2);
+    }
+    nav {
+        grid-template-rows: 1fr;
+        
+    }
+    header{
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+
+
+
+    
+}
