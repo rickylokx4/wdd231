@@ -1,16 +1,39 @@
+:root{
+    --background-color:#2a2727;
+    --first-font-color: #ffffff;
+    --secundary-font-color:#d9b310;
+    --third-font-color: #ffff;
+    --selection-color: #cdd2d5;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Play", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    min-width: 320px;
+    margin: 0 auto;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: var(--selection-color);
+}
+main{
+    margin: 0 auto;
+    max-width: 1100px;
+}
+header{
+    background-color: var(--background-color);
+    padding: .5rem;
 }
 #header-content{
-    background-color: rgb(158, 167, 128);
+    /* background-color: var(--background-color); */
     display: grid;
-    grid-template-columns: 50px auto 44px;
+    grid-template-columns: 50px auto 50px;
     align-items: end;
-}
-nav {
-    background-color: rgb(151, 151, 229);
 }
 /*adding ☰ symbol*/
 #navButton::before {
@@ -30,11 +53,11 @@ nav {
 
 /*changing list style*/
 #menuLinks li a {
-    border: pink dashed 1px; /*erase this*/
     display: block;
     padding: .75rem 2vw;
     color: #fff;
     text-decoration: none;
+    font-size: 1.3rem;
 }
 
 /*changing current page list style (making dark)*/
@@ -45,9 +68,14 @@ nav {
 #menuLinks {
     list-style-type: none;
 }
+/*styling hover lists*/
+#menuLinks a:hover{
+    background-color: rgba(255,255,255,0.2);
+}
 /*adding a X when the bar is close*/
 #navButton.open::before {
     content: "\2716";
+    margin-right: 1rem;
 }
 /*taking list out*/
 nav{
@@ -62,3 +90,22 @@ nav ul {
 nav.open{
     grid-template-rows: 1fr;
 }
+
+/*----------------------base config--------------------------*/
+span{
+    color:#fff
+}
+#logo{
+    width: 45px;
+}
+footer{
+    background-color: var(--background-color);
+    color: var(--first-font-color);
+    padding: .9rem;
+    text-align: center;
+}
+.fotter1, .footer2, .fotter3{
+    margin: 20px;
+}
+
+

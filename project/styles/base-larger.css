@@ -8,19 +8,39 @@
         display: flex;
         justify-content: flex-end;
     }
-    #menuLinks a:hover{
-        background-color: rgba(255,255,255,0.2);
-    }
+    
     nav {
         grid-template-rows: 1fr;
+        transition: none;
+        margin-top: 2rem;
         
     }
     header{
         display: grid;
         grid-template-columns: 30% 70%;
+        padding: .5rem .8rem;
+    }
+    #header-content{
+        grid-template-columns: 80px auto;
+        align-items: end;
     }
 
-
+    #logo{
+        width: 80px;
+    }
+    #banner{
+        width: 11.5rem;
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+    footer{
+        
+        display: flex;
+    }
+    footer div{
+        max-width: 350px;
+        margin: auto;
+    }
 
     
 }
