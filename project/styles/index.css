@@ -1,0 +1,32 @@
+/* .slider {
+    overflow: hidden;
+}
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 1s ease-in;
+    align-items: center;
+}
+.slider-container img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 1100px;
+} */
+ .slider {
+    aspect-ratio: 16/9;
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: X mandatory;
+ }
+
+.slider img {
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+}
