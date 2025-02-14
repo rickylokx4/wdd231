@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-larger.css">
+    <link rel="stylesheet" href="styles/registration.css">
+    <script src="scripts/registration.js" type="module"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="header-content">
+            <img id ="logo" src="images/logo.webp" alt="page-logo" loading="lazy">
+            <span id="banner">Strong Punch<br>Figthing Games</span>
+            <button id="navButton"></button>
+        </div>
+        <div>
+            <nav id="navBar">
+                
+                <ul id="menuLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current-page"><a href="registration.html">Registration</a></li>
+                    <li><a href="#">Ranking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>------</h1>
+        <div  id="registation-container">
+            <div>
+                <h2>Tournament Registration</h2>
+                <form method="get" action="thanks.html" class="form1">
+                    <fieldset>
+                        <legend>Registration Information</legend>
+                        <label>First Name*<input type="text" name="fname" title="Provide your first name" autocomplete="given-name" required></label>
+                        <label>Last Name*<input type="text" name="lname" title="Provide your last name" autocomplete="family-name" required></label>
+                        <label>Player Name* (Nick Name)<input type="text" name="nickname" title="Provide your Nickname (Must be at least 7 characters and only letters, hyphens or spaces) " autocomplete="nickname" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\- ]{7,}" required></label>
+                        <label>Email*<input type="email" name="email" autocomplete="email" title="Provide your e-mail" placeholder="someone@somemail.com" required></label>
+                        <label>Phone<input type="tel" name="phone" title="Provide your phone number" placeholder="123456789" autocomplete="tel" required></label>
+                        <label>Birthdate<input id="my-date" type="date" name="birthday" title="Provide your birthday" required></label>
+                        <div>Choose your game</div>
+                        <label><input type="radio" name="game" value="Marvel Vs Capcom" required>Marvel Vs Capcom</label>
+                        <label><input type="radio" name="game" value="Marvel Vs Capcom 2" required>Marvel Vs Capcom 2</label>
+                        <label><input type="radio" name="game" value="Marvel Vs Street Fighters" required>Marvel Vs Street Fighters</label>
+                        <label><input type="radio" name="game" value="X-menVs Street Fighter" required>X-menVs Street Fighter</label>
+                        <input type="hidden" id="timestamp" name="timestamp">
+                    </fieldset>
+                    <input type="submit" value="join to the chamber">
+                </form>
+            </div>
+            <div id="info-container">
+                <h2>Click the image for details</h2>
+                <div id="games-cards"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer1">
+            <p>Strong Punch</p>
+            <p>info@strongpunch.org</p>
+        </div>
+        <div class="footer2">
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook-ico"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="facebook-ico"></a>
+            <a href="https://www.whatsapp.com/"><img src="images/whatsapp.png" alt="facebook-ico"></a>
+        </div>
+        <div class="footer3">
+            <p>WDD231 Class Project</p>
+            <p>Ricardo Salazar</p>
+            <p>&copy;<span id="currentyear"></span>Strong Punch</p>
+            <p id="lastModified"></p>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

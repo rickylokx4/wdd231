@@ -49,3 +49,10 @@
     border-color: #d9b310;
     padding: 1px 20px;
 }
+
+
+@media only screen and (min-width: 38rem){
+    #call {
+        font-size: 30px;
+    }
+}
