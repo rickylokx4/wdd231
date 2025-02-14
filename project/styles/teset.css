@@ -1,0 +1,41 @@
+#call {
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    font-weight: 600;
+    background-color: #d9b310;;
+    color: #000000;
+    font-size: 25px;
+    text-decoration: none;
+    border: solid;
+    border-radius: 20px;
+    border-color: #d9b310;
+    padding: 1px 20px;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.slider ul {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    animation: slide 15s alternate infinite linear;
+}
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
