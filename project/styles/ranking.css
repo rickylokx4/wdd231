@@ -11,7 +11,7 @@ h1{
     
 }
 .ranking-container div{
-    min-width: 380px;
+    min-width: 350px;
     margin: 1rem auto;
 }
 .ranking-container div div p {
@@ -27,13 +27,14 @@ h1{
     border: solid;
     border-radius: 6px;
     border-color: #2a2727;
-    padding: 1rem;
+    padding: .2rem;
     background-color: rgb(226, 231, 236);
     border-color: rgb(210, 211, 211);
     box-shadow: 0 0 10PX 2PX rgb(80, 82, 82)
 }
 @media only screen and (min-width: 38rem){
     .card {
+        min-width: 380px;
         padding: 3rem;
     }
 }
