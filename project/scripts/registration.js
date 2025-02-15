@@ -19,7 +19,7 @@ const timestamp = new Date().toLocaleString();
 console.log(timestamp)
 document.querySelector('#timestamp').value = timestamp;
 
-// geting info from api (local json)
+// getting info from api (local json)
 
 const url = 'scripts/games.json'
 const infoContainer = document.querySelector('#games-cards')
@@ -39,7 +39,7 @@ const displayGames = (games) => {
         
         const img = document.createElement('img')
         const button = document.createElement('button')
-        //creatin dialog
+        //creating dialog
         const dialog = document.createElement('dialog')
 		const dialogDiv = document.createElement('div')
 		const dialogTitle = document.createElement('h2')
@@ -71,6 +71,7 @@ const displayGames = (games) => {
 			<p><span class="dialog-text">Second Place:</span> ${data.secondPlace}</p>
 			<p><span class="dialog-text">Third Place:</span> ${data.thirdPlace}</p>
 			<p><span class="dialog-text">Top 10 prizes:</span> ${data.top10}</p>
+            <p><span class="dialog-text">Inscription:</span> ${data.inscription}</p>
 			`
             dialog.showModal()
 		}

@@ -1,0 +1,97 @@
+{"game1":[
+    {
+        "name": "Marvel vs Capcom",
+        "ranking": [
+            {
+                "position": "1",
+                "nickname": "Nando",
+                "team": "Gambit, Cap. Comando"
+        },
+        {
+                "position": "2",
+                "nickname": "The Andy",
+                "team": "War Machine, Ryu"
+        },
+        {
+                "position": "3",
+                "nickname":"Uly",
+                "team": "Wolverine, Strider Hiryu"
+        }
+        ]
+    }
+    
+],
+"game2":[
+    {
+        "name": "Marvel vs Capcom 2",
+        "ranking":[
+            {   
+            "position": "1",
+            "nickname": "Lokx",
+            "team": "Iron-Man, Gambit, Dr. Doom"
+        },
+        {
+            "game":"2",
+            "position": "Second Place",
+            "nickname": "Guy Senseni",
+            "team": "Iron-Man, Gambit, Dr. Doom"
+        },
+        {
+            "game":"3",
+            "position": "Third Place",
+            "nickname":"Luffyx",
+            "team": "Iron-Man, Gambit, Dr. Doom"
+        }
+        ]
+    }
+    
+],
+
+"game3":[
+    {
+        "name": "Marvel Vs Street Fighter",
+        "ranking":[
+        {
+            "position": "1",
+            "nickname": "Madmad",
+            "team": "Hulk, Cyclops"
+        },
+        {
+            "position": "2",
+            "nickname": "Red Sky",
+            "team": "Shadow, Akuma"
+        },
+        {
+            "position": "3",
+            "nickname":"The One",
+            "team": "Blackheart, Omega Red"
+        }
+        ]
+    }
+    
+],
+"game4":[
+    {
+        "name": "X-men Vs Streetfigthter",
+        "ranking":[
+        {  
+            "position": "1",
+            "nickname": "MisionX",
+            "team": "Cyclope, Wolverine"
+        },
+        {
+            "position": "2",
+            "nickname": "Ray",
+            "team": "Storm, Ryu"
+        },
+        {
+            "position": "3",
+            "nickname":"Mario",
+            "team": "Wolverine, Juggernaut"
+        }
+        ]
+    }
+    
+]
+
+}

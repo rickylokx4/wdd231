@@ -1,0 +1,17 @@
+.ranking-container div div p {
+   color: #2a2727;
+}
+.rankingtext {
+    color: #2a2727;
+    font-weight: 600;
+}
+.ranking-container div {
+    margin: 0 1rem 1rem 0;
+
+}
+.ranking-container {
+    min-width: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
