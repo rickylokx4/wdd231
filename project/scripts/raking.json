@@ -1,6 +1,7 @@
 {"game1":[
     {
         "name": "Marvel vs Capcom",
+        "imageurl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8r3z.webp",
         "ranking": [
             {
                 "position": "1",
@@ -24,6 +25,7 @@
 "game2":[
     {
         "name": "Marvel vs Capcom 2",
+        "imageurl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co870e.webp",
         "ranking":[
             {   
             "position": "1",
@@ -50,6 +52,7 @@
 "game3":[
     {
         "name": "Marvel Vs Street Fighter",
+        "imageurl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8iho.webp",
         "ranking":[
         {
             "position": "1",
@@ -73,6 +76,7 @@
 "game4":[
     {
         "name": "X-men Vs Streetfigthter",
+        "imageurl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8poj.webp",
         "ranking":[
         {  
             "position": "1",

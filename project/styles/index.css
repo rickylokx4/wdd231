@@ -1,5 +1,9 @@
+h1 {
+    display: none;
+}
 .container{
-    position: relative;
+    margin-top: 2rem;
+    box-shadow: 0 0 10PX 2PX rgb(80, 82, 82)
 }
 .slider {
     position: relative;
@@ -56,3 +60,18 @@
         font-size: 30px;
     }
 }
+
+.player-container{
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    
+}
+#video1 {
+    box-shadow: 0 0 10PX 2PX rgb(80, 82, 82);
+    aspect-ratio: 16/9;
+    
+
+}
+
+

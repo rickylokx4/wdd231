@@ -16,17 +16,27 @@ navButton.addEventListener('click', ()=>{
 const url = 'scripts/raking.json'
 const infoContainer = document.querySelector('.ranking-container')
 
-async function getRanking() {
-	const response = await fetch(url);
-	const data = await response.json();
-    displayRanking(data.game1)
-    displayRanking(data.game2)
-    displayRanking(data.game3)
-    displayRanking(data.game4)
-}
-
+async function getRanking(url) {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        displayRanking(data.game1)
+        displayRanking(data.game2)
+        displayRanking(data.game3)
+        displayRanking(data.game4)
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+  //`background-size: cover;`
 const displayRanking = (data) => {
+    console.log(data[0].imageurl)
     const card = document.createElement('div')
+    card.setAttribute("class","card")
     const gameName = document.createElement('h2')
     card.appendChild(gameName)
     gameName.innerHTML = data[0].name
@@ -41,4 +51,4 @@ const displayRanking = (data) => {
         `;
     });
 }
-getRanking()
+getRanking(url)

@@ -24,12 +24,19 @@ document.querySelector('#timestamp').value = timestamp;
 const url = 'scripts/games.json'
 const infoContainer = document.querySelector('#games-cards')
 
-async function getGamesInfo() {
-	const response = await fetch(url);
-	const data = await response.json();
-	// console.log(data.games)
-    displayGames(data.games)
-    displayGames(data.games1)
+async function getGamesInfo(url) {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        displayGames(data.games)
+        displayGames(data.games1)
+} else {
+    throw Error(await response.text());
+}
+} catch (error) {
+  console.log(error);
+}
 }
 
 const displayGames = (games) => {
@@ -82,4 +89,4 @@ const displayGames = (games) => {
     })};
 
 
-getGamesInfo()
+getGamesInfo(url)
