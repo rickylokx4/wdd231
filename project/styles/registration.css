@@ -113,7 +113,7 @@ section img:hover {
 /*dialgo styling*/
 dialog{
     margin: auto;
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 2.5rem;
     text-align: start;
     border-width: 1px;
     text-align: center;
@@ -124,16 +124,15 @@ dialog div {
     
 }
 dialog div button {
-
     margin-top: 0;
-    margin-right: -50px;
     cursor: pointer;
-    margin: 1rem;
+    margin: .4rem;
     border: none;
-    border-radius: 6px;
-    padding: .2rem .4rem ;
-    background-color: #2a2727;
-    color: #ffffff;
+    background: none;
+    color: #ff0000;
+    font-size: 1.8rem;
+    font-weight: 600;
+    
 }
 dialog p {
     margin-top: .8rem;
@@ -148,5 +147,4 @@ dialog p {
     color: #2a2727;
  }
 
- #info-container {
- }
+ 
