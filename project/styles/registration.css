@@ -83,14 +83,12 @@ textarea {
     color: #2a2727;
     font-weight: 600;
 }
-#information p{
-    margin: 1rem;
-}
-
 #info-container {
     width: 350px;
+    margin: auto auto;
 }
 section {
+    border-width: 2px;
     margin: 1rem;
     display: flex;
     width: 320px;
