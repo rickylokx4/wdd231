@@ -1,17 +1,24 @@
-.ranking-container div div p {
-   color: #2a2727;
-}
 .rankingtext {
     color: #2a2727;
     font-weight: 600;
 }
-.ranking-container div {
-    margin: 0 1rem 1rem 0;
-
-}
 .ranking-container {
-    min-width: none;
     display: flex;
     flex-wrap: wrap;
     
 }
+.ranking-container div {
+    min-width: 450px;
+    margin: 1rem auto;
+
+}
+.ranking-container div div p {
+    margin: .5rem;
+    color: #2a2727;
+ }
+ .ranking-container div h2{
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
