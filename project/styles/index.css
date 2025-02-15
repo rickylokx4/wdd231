@@ -61,8 +61,12 @@ h1 {
     }
 }
 
-.player-container{
-    margin: 2rem auto;
+.player-container {
+    margin: 2rem 1rem;
+    text-align: center;
+}
+.player{
+    margin: 1rem auto;
     display: flex;
     justify-content: center;
     
@@ -70,7 +74,8 @@ h1 {
 #video1 {
     box-shadow: 0 0 10PX 2PX rgb(80, 82, 82);
     aspect-ratio: 16/9;
-    
+    max-width: 850px;
+
 
 }
 
