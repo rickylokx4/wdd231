@@ -1,5 +1,4 @@
 import { getCurrentYear, getLastModified } from "./functions.mjs";
-import { places } from "./places.mjs";
 
 getCurrentYear();
 getLastModified();
@@ -16,8 +15,23 @@ hamButton.addEventListener('click', () => {
 // creating cards
 const cards = document.querySelector('#discover-cards')
 
-function makeCards(places){
-    places.forEach(place => {
+const url = 'scripts/places.json'
+
+async function apiFetch(url) {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        makeCards(data)
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+  const makeCards = (data) => {
+    data.places.forEach((place) =>{
         const card = document.createElement('div')
         const title = document.createElement('h3')
         const image = document.createElement('img')
@@ -40,8 +54,9 @@ function makeCards(places){
         card.appendChild(button)
         cards.appendChild(card)
     });
-}
-makeCards(places)
+};
+apiFetch(url)
+
 //last visit section
 const msToDays = 86400000;
 const lastVisitDiv = document.querySelector('#lastVisit')

@@ -1,4 +1,4 @@
-export const places = [
+ {"places" : [
     {
       "name": "Huacachina Oasis",
       "address": "Huacachina, Ica, Peru",
@@ -70,4 +70,4 @@ export const places = [
       "photo_url": "images/paracas.webp"
     }
   ]
-  
+}

@@ -45,15 +45,20 @@
     #call {
         font-size: 30px;
     }
-}
-/* 1024px = 64rem */
-@media only screen and (min-width: 1024px) {
-    .discover-card{
+    #discover-cards{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;   
     }
-   
+    .discover-card{
+        grid-template-areas: 
+        "name name"
+        "img description"
+        "img address"
+        "button button";  
+    }
+    
 }
+
 
 
 
