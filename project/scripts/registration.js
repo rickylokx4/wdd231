@@ -45,7 +45,6 @@ const displayGames = (games) => {
         //creating img 
         
         const img = document.createElement('img')
-        const button = document.createElement('button')
         //creating dialog
         const dialog = document.createElement('dialog')
 		const dialogDiv = document.createElement('div')
@@ -57,8 +56,6 @@ const displayGames = (games) => {
         img.setAttribute("src", `${game.imageurl}`)
         img.setAttribute("alt", `${game.name} poster`)
         img.setAttribute("loanding", "lazy")
-        // button content
-        button.innerText = "See Details"
         //adding cards content
         dialogDiv.appendChild(dialogTitle)
         card.appendChild(img)
