@@ -34,8 +34,3 @@ localStorage.setItem("lastVisit-ls", currentVisit)
 
 
 
-const key = '3e23b15740194fd4a8c2ae8891ccde7f'
-const mapurl = `https://maps.geoapify.com/v1/staticmap?style=osm-bright&width=600&height=400&center=lonlat:-75.727032,-14.075847&zoom=17.966&pitch=4&apiKey=3e23b15740194fd4a8c2ae8891ccde7f`;
-
-
-

@@ -107,6 +107,9 @@ footer{
 .fotter1, .footer2, .fotter3{
     margin: 20px;
 }
+.footer2 img {
+    margin: .4rem;
+}
 
 
 h1{

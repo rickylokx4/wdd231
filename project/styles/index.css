@@ -60,15 +60,6 @@ h1 {
     font-size: 1.3rem;
     text-align: center;
     margin-top: 1rem;
-    animation: slide 15s infinite linear;
-    
-}
-@keyframes slide {
-    0% { transform: translateX(0);}
-    25% { transform: translateX(25%);}
-    50% { transform: translateX(0);}
-    75% { transform: translateX(-25%);}
-    100% { transform: translateX(0);}
 }
 #video1 {
     border: none;
