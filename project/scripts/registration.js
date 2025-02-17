@@ -58,12 +58,13 @@ const displayGames = (games) => {
         img.setAttribute("loanding", "lazy")
         //adding cards content
         dialogDiv.appendChild(dialogTitle)
-        card.appendChild(img)
-        infoContainer.appendChild(card)
         dialogDiv.appendChild(dialogButton)
         dialog.appendChild(dialogDiv)
         dialog.appendChild(dialogParagraph)
+        card.appendChild(img)
+        infoContainer.appendChild(card)
         infoContainer.appendChild(dialog)
+
         dialogButton.addEventListener('click', ()=> {dialog.close()})
         img.addEventListener('click', ()=> {showContent(game)})
 
