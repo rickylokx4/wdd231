@@ -9,19 +9,22 @@
     display: grid;
     grid-template-areas: 
     "name"
-    "img"
+    "figure"
     "description"
     "address"
     "button";
 }
-.discover-card h3 {
+.discover-card h2 {
     margin: 0.5rem 10px;
     grid-area: name;
 }
-.discover-card img{
+.discover-card figure{
     width: 100%;
-    grid-area: img;
+    grid-area: figure;
     margin: auto;
+}
+.discover-card figure img{
+    width: 100%;
 }
 .discover-card p {
     margin: .5rem 10px;

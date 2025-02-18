@@ -15,7 +15,7 @@ hamButton.addEventListener('click', () => {
 // creating cards
 const cards = document.querySelector('#discover-cards')
 
-const url = 'scripts/places.json'
+const url = 'data/places.json'
 
 async function apiFetch(url) {
     try {
@@ -33,7 +33,8 @@ async function apiFetch(url) {
   const makeCards = (data) => {
     data.places.forEach((place) =>{
         const card = document.createElement('div')
-        const title = document.createElement('h3')
+        const title = document.createElement('h2')
+        const figure = document.createElement('figure')
         const image = document.createElement('img')
         const description = document.createElement('p')
         const address = document.createElement('address')
@@ -44,10 +45,11 @@ async function apiFetch(url) {
         image.setAttribute("alt", `photography of ${place.name}`);
         image.setAttribute("loading", "lazy");
         image.setAttribute("class", "card-image")
-        description.innerHTML = `Description: ${place.description} `;
-        address.innerHTML = `Address: ${place.address} `;
+        description.innerHTML = `${place.description} `;
+        address.innerHTML = `${place.address} `;
         button.innerHTML = "Learn more"
-        card.appendChild(image)
+        card.appendChild(figure)
+        figure.appendChild(image)
         card.appendChild(title)
         card.appendChild(address)
         card.appendChild(description)

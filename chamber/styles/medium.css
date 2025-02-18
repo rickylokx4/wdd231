@@ -3,8 +3,8 @@
     .discover-card{
         grid-template-areas: 
         "name name"
-        "img description"
-        "img address"
+        "figure description"
+        "figure address"
         "button button";
     }
     .card-image:hover{

@@ -7,13 +7,6 @@
       "photo_url": "images/huacachina.webp"
     },
     {
-      "name": "Sandboarding & Dune Buggy Rides",
-      "address": "Huacachina, Ica, Peru",
-      "cost": "$20–$30 USD per person",
-      "description": "Experience the thrill of riding dune buggies over vast sand dunes and sliding down on sandboards. Numerous local operators offer these adrenaline-pumping tours.",
-      "photo_url": "images/sandboarding.webp"
-    },
-    {
       "name": "Tour a Pisco Vineyard",
       "address": "Tacama Winery, Camino Real S/N La Tinguina, Ica, Peru",
       "cost": "Tours start around $10 USD per person",
@@ -47,13 +40,6 @@
       "cost": "Free",
       "description": "A hidden gem, this tranquil lagoon is ideal for swimming and picnics, offering a peaceful retreat amidst the desert landscape.",
       "photo_url": "images/moron.webp"
-    },
-    {
-      "name": "Try Traditional Ica Food",
-      "address": "El Otro Peñoncito Restaurant, Av. San Martín 150, Ica, Peru",
-      "cost": "$5-$15 USD per dish",
-      "description": "Savor local specialties like 'Carapulcra con Sopa Seca,' a flavorful combination of dried potato stew and seasoned noodles.",
-      "photo_url": "images/penon.webp"
     },
     {
       "name": "Discover the Cañón de los Perdidos",
