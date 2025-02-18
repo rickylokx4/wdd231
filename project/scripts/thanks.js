@@ -22,7 +22,7 @@ let result
 function show(info){
     formData.forEach((element) => {
         if(element.startsWith(info)) {
-            result = element.split('=')[1].replace("%40","@").replaceAll("%2F","/").replace("%2C+"," ").replace("%2B","").replaceAll("%3A",":").replaceAll("+"," ")
+            result = element.split('=')[1].replace("%40","@").replaceAll("%2F","/").replace("%2C+"," ").replace("%2B","").replaceAll("%3A",":").replaceAll("+"," ").replaceAll("%28","(").replaceAll("%29",")")
         }
     })
     return (result)
