@@ -13,7 +13,7 @@ navButton.addEventListener('click', ()=>{
 
 // getting information from api(json file)
 
-const url = 'scripts/raking.json'
+const url = 'data/raking.json'
 const infoContainer = document.querySelector('.ranking-container')
 
 async function getRanking(url) {

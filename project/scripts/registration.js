@@ -21,7 +21,7 @@ document.querySelector('#timestamp').value = timestamp;
 
 // getting info from api (local json)
 
-const url = 'scripts/games.json'
+const url = 'data/games.json'
 const infoContainer = document.querySelector('#games-cards')
 
 async function getGamesInfo(url) {
