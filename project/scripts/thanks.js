@@ -1,4 +1,4 @@
-import { getCurrentYear, getLastModified} from "./functions.mjs";
+import { getCurrentYear, getLastModified} from "../data/functions.mjs";
 
 getCurrentYear()
 getLastModified()
